@@ -1,11 +1,13 @@
 package com.movesense.showcaseapp.section_01_movesense.tests;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.widget.SwitchCompat;
 import android.util.Log;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.media.MediaPlayer;
 
 import com.google.gson.Gson;
 import com.movesense.mds.Mds;
@@ -59,11 +61,19 @@ public class ImuActivity extends BaseActivity implements BleManager.IBleConnecti
     private CsvLogger mCsvLogger;
     private boolean isLogSaved = false;
 
+    MediaPlayer mpX;
+    MediaPlayer mpY;
+    MediaPlayer mpZ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imu);
         ButterKnife.bind(this);
+
+        mpX = MediaPlayer.create(this, R.raw.basic_rock);
+        mpY = MediaPlayer.create(this, R.raw.cymbal);
+        mpZ = MediaPlayer.create(this, R.raw.electricguitar);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Imu");
@@ -109,6 +119,13 @@ public class ImuActivity extends BaseActivity implements BleManager.IBleConnecti
                                     imuModel.getBody().getArrayAcc()[0].getX(),
                                     imuModel.getBody().getArrayAcc()[0].getY(),
                                     imuModel.getBody().getArrayAcc()[0].getZ()));
+
+                            if (Math.abs(imuModel.getBody().getArrayAcc()[0].getX()) > 5)
+                                mpX.start();
+                            if (Math.abs(imuModel.getBody().getArrayAcc()[0].getY()) > 5)
+                                mpY.start();
+                            if (Math.abs(imuModel.getBody().getArrayAcc()[0].getZ() - 9.8) > 5)
+                                mpZ.start();
 
                             mGyroXAxisTextView.setText(String.format(Locale.getDefault(), "x: %.6f", imuModel.getBody().getArrayGyro()[0].getX()));
                             mGyroYAxisTextView.setText(String.format(Locale.getDefault(), "y: %.6f", imuModel.getBody().getArrayGyro()[0].getY()));
