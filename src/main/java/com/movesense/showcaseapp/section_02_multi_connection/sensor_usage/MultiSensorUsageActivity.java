@@ -108,7 +108,8 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private CsvLogger mCsvLogger;
     private boolean isLogSaved = false;
     private boolean isTeacher = true;
-    private String coreoPath;
+    private String choreoPath;
+    private String[][] data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,19 +124,19 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
             mCsvLogger = new CsvLogger();
         } else {
         }
-            coreoPath = getIntent().getStringExtra("path");
+        choreoPath = getIntent().getStringExtra("path");
 
 
         String line;
-        System.out.println(coreoPath);
-        try (BufferedReader br = new BufferedReader(new FileReader(coreoPath))) {
+        System.out.println(choreoPath);
+        try (BufferedReader br = new BufferedReader(new FileReader(choreoPath))) {
 
             while ((line = br.readLine()) != null) {
 
                 // use comma as separator
-                String[] data = line.split(";");
+                String[] moment = line.split(";");
 
-                System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
+                //System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
 
             }
 
