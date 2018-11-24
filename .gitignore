@@ -1,2 +1,5 @@
 *.idea
 
+# Gradle files
+.gradle/
+build/
