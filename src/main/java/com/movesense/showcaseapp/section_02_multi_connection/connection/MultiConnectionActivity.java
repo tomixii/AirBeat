@@ -55,6 +55,8 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
     private CompositeSubscription mCompositeSubscription;
     private boolean isFirstDeviceConnected = false;
     private boolean isSecondDeviceConnected = false;
+    private boolean practiceClicked = false;
+    private boolean addClicked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +113,12 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
                             }
 
                             if (isFirstDeviceConnected && isSecondDeviceConnected) {
-                                startActivity(new Intent(MultiConnectionActivity.this, SendLogsToGoogleDriveActivity.class));
+                                if(addClicked) {
+                                    startActivity(new Intent(MultiConnectionActivity.this, MultiSensorUsageActivity.class).putExtra("teacher", true));
+                                } else if(practiceClicked) {
+                                    startActivity(new Intent(MultiConnectionActivity.this, SendLogsToGoogleDriveActivity.class));
+
+                                }
                             }
                         }
                     }
@@ -148,7 +155,7 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
 
                     mMultiConnectionStatusTv.setText("Connecting...");
                     blockUI();
-
+                    addClicked = true;
                     Mds.builder().build(MultiConnectionActivity.this).connect(mRxBleDevice1.getMacAddress(), null);
                     Mds.builder().build(MultiConnectionActivity.this).connect(mRxBleDevice2.getMacAddress(), null);
                 } else {
@@ -166,6 +173,7 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
 
                     mMultiConnectionStatusTv.setText("Connecting...");
                     blockUI();
+                    practiceClicked = true;
 
                     Mds.builder().build(MultiConnectionActivity.this).connect(mRxBleDevice1.getMacAddress(), null);
                     Mds.builder().build(MultiConnectionActivity.this).connect(mRxBleDevice2.getMacAddress(), null);

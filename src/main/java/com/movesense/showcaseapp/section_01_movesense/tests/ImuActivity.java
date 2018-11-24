@@ -77,8 +77,8 @@ public class ImuActivity extends BaseActivity implements BleManager.IBleConnecti
 
 
         mpX = MediaPlayer.create(this, R.raw.basic_rock);
-        mpY = MediaPlayer.create(this, R.raw.cymbal);
-        mpZ = MediaPlayer.create(this, R.raw.electricguitar);
+        //mpY = MediaPlayer.create(this, R.raw.cymbal);
+        //mpZ = MediaPlayer.create(this, R.raw.electricguitar);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Imu");

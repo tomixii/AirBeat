@@ -38,6 +38,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 import java.util.Locale;
 
 import butterknife.BindView;
@@ -107,9 +108,9 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private MdsSubscription mMdsTemperatureSubscription2;
     private CsvLogger mCsvLogger;
     private boolean isLogSaved = false;
-    private boolean isTeacher = true;
+    private boolean isTeacher;
     private String choreoPath;
-    private String[][] data;
+    private List<String[]> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,29 +121,30 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Multi Sensor Usage");
         }
+        isTeacher = getIntent().getBooleanExtra("teacher", false);
         if(isTeacher) {
             mCsvLogger = new CsvLogger();
         } else {
-        }
-        choreoPath = getIntent().getStringExtra("path");
+            choreoPath = getIntent().getStringExtra("path");
+            String line;
+            System.out.println(choreoPath);
+            try (BufferedReader br = new BufferedReader(new FileReader(choreoPath))) {
 
+                while ((line = br.readLine()) != null) {
 
-        String line;
-        System.out.println(choreoPath);
-        try (BufferedReader br = new BufferedReader(new FileReader(choreoPath))) {
+                    // use comma as separator
+                    String[] moment = line.split(";");
+                    data.add(moment);
+                    //System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
 
-            while ((line = br.readLine()) != null) {
+                }
 
-                // use comma as separator
-                String[] moment = line.split(";");
-
-                //System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
-
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+
+
 
         mPresenter = new MultiSensorUsagePresenter(this);
         mCompositeSubscription = new CompositeSubscription();
