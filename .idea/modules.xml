@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AirBeat.iml" filepath="$PROJECT_DIR$/AirBeat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Movesense/mdslib-1.28.1/mdslib-1.28.1.iml" filepath="$PROJECT_DIR$/Movesense/mdslib-1.28.1/mdslib-1.28.1.iml" />
+    </modules>
+  </component>
+</project>
