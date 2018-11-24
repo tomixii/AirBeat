@@ -114,11 +114,11 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     //private String[][] data;
 
     //For sensor one
-    private List<Float> timestp1 = new ArrayList<Float>();
+    private List<Integer> timestp1 = new ArrayList<Integer>();
     private List<Float> totalAcc1 = new ArrayList<Float>();
 
     //For sensor two
-    private List<Float> timestp2 = new ArrayList<Float>();
+    private List<Integer> timestp2 = new ArrayList<Integer>();
     private List<Float> totalAcc2 = new ArrayList<Float>();
 
     @Override
@@ -148,7 +148,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
 
                 //System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
                 if (data[0].equals("1")) {
-                    timestp1.add(Float.parseFloat(data[1]));
+                    timestp1.add(Integer.parseInt(data[1]));
 
                     //Split the decimal separated by "," and rejoin them with "." as separator
                     //Then parse to float
@@ -167,7 +167,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                     totalAcc1.add((float)Math.sqrt(Math.pow(x1,2) + Math.pow(y1,2) + Math.pow(z1,2)));
                 }
                 else if (data[0].equals("2")) {
-                    timestp2.add(Float.parseFloat(data[1]));
+                    timestp2.add(Integer.parseInt(data[1]));
 
                     String[] xparts;
                     xparts = data[2].split(",");
