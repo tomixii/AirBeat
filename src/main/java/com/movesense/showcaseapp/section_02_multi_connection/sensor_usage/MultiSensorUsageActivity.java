@@ -113,6 +113,14 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private String choreoPath;
     //private String[][] data;
 
+    //For sensor one
+    private List<Float> timestp1 = new ArrayList<Float>();
+    private List<Float> totalAcc1 = new ArrayList<Float>();
+
+    //For sensor two
+    private List<Float> timestp2 = new ArrayList<Float>();
+    private List<Float> totalAcc2 = new ArrayList<Float>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -133,18 +141,6 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         System.out.println(choreoPath);
         try (BufferedReader br = new BufferedReader(new FileReader(choreoPath))) {
 
-            //For sensor one
-            List<Float> timestp1 = new ArrayList<Float>();
-            List<Float> x1 = new ArrayList<Float>();
-            List<Float> y1 = new ArrayList<Float>();
-            List<Float> z1 = new ArrayList<Float>();
-
-            //For sensor two
-            List<Float> timestp2 = new ArrayList<Float>();
-            List<Float> x2 = new ArrayList<Float>();
-            List<Float> y2 = new ArrayList<Float>();
-            List<Float> z2 = new ArrayList<Float>();
-
             while ((line = br.readLine()) != null) {
 
                 // use comma as separator
@@ -158,30 +154,34 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                     //Then parse to float
                     String[] xparts;
                     xparts = data[2].split(",");
-                    x1.add(Float.parseFloat(xparts[0] + "." + xparts[1]));
+                    Float x1 = Float.parseFloat(xparts[0] + "." + xparts[1]);
 
                     String[] yparts;
                     yparts = data[3].split(",");
-                    y1.add(Float.parseFloat(yparts[0] + "." + yparts[1]));
+                    Float y1 = Float.parseFloat(yparts[0] + "." + yparts[1]);
 
                     String[] zparts;
                     zparts = data[4].split(",");
-                    z1.add(Float.parseFloat(zparts[0] + "." + zparts[1]));
+                    Float z1 = Float.parseFloat(zparts[0] + "." + zparts[1]);
+
+                    totalAcc1.add((float)Math.sqrt(Math.pow(x1,2) + Math.pow(y1,2) + Math.pow(z1,2)));
                 }
                 else if (data[0].equals("2")) {
                     timestp2.add(Float.parseFloat(data[1]));
 
                     String[] xparts;
                     xparts = data[2].split(",");
-                    x2.add(Float.parseFloat(xparts[0] + "." + xparts[1]));
+                    Float x2 = Float.parseFloat(xparts[0] + "." + xparts[1]);
 
                     String[] yparts;
                     yparts = data[3].split(",");
-                    y2.add(Float.parseFloat(yparts[0] + "." + yparts[1]));
+                    Float y2 = Float.parseFloat(yparts[0] + "." + yparts[1]);
 
                     String[] zparts;
                     zparts = data[4].split(",");
-                    z2.add(Float.parseFloat(zparts[0] + "." + zparts[1]));
+                    Float z2 = Float.parseFloat(zparts[0] + "." + zparts[1]);
+
+                    totalAcc2.add((float)Math.sqrt(Math.pow(x2,2) + Math.pow(y2,2) + Math.pow(z2,2)));
                 }
             }
 
