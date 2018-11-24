@@ -2,6 +2,7 @@ package com.movesense.showcaseapp.section_01_movesense.tests;
 
 
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -34,6 +35,7 @@ import com.movesense.showcaseapp.R;
 import com.movesense.showcaseapp.bluetooth.ConnectionLostDialog;
 import com.movesense.showcaseapp.bluetooth.MdsRx;
 import com.movesense.showcaseapp.csv.CsvLogger;
+import com.movesense.showcaseapp.model.HeartRate;
 import com.movesense.showcaseapp.model.InfoResponse;
 import com.movesense.showcaseapp.model.LinearAcceleration;
 import com.movesense.showcaseapp.utils.FormatHelper;
@@ -47,6 +49,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnCheckedChanged;
 import butterknife.OnItemSelected;
+
+
 
 public class LinearAccelerationTestActivity extends BaseActivity implements BleManager.IBleConnectionMonitor {
 
@@ -77,6 +81,7 @@ public class LinearAccelerationTestActivity extends BaseActivity implements BleM
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linear_acceleration_test);
         ButterKnife.bind(this);
+
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Linear Acceleration");
