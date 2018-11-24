@@ -1,5 +1,6 @@
 package com.movesense.showcaseapp.section_01_movesense.tests;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.SwitchCompat;
@@ -48,12 +49,14 @@ public class HeartRateTestActivity extends BaseActivity implements BleManager.IB
     private boolean isLogSaved = false;
     private long timestamp;
     private final String TAG = HeartRateTestActivity.class.getSimpleName();
+    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heart_rate_test);
         ButterKnife.bind(this);
+        mp = MediaPlayer.create(this, R.raw.basic_rock);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Heart Rate");
@@ -107,6 +110,8 @@ public class HeartRateTestActivity extends BaseActivity implements BleManager.IB
                             HeartRate heartRate = new Gson().fromJson(data, HeartRate.class);
 
                             if (heartRate != null) {
+
+                                mp.start();
                                 mHeartRateRrValueTextView.setText(String.format(Locale.getDefault(),
                                         "RR [ms]: %d", heartRate.body.rrData[0]));
 
@@ -117,6 +122,7 @@ public class HeartRateTestActivity extends BaseActivity implements BleManager.IB
 
                                 mCsvLogger.appendLine(String.format(Locale.getDefault(),
                                         "%d,%.2f,%d", timestamp,heartRate.body.average, heartRate.body.rrData[0]));
+
                             }
                         }
 
