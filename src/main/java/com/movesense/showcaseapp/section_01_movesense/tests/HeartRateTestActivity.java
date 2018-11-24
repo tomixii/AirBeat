@@ -49,14 +49,12 @@ public class HeartRateTestActivity extends BaseActivity implements BleManager.IB
     private boolean isLogSaved = false;
     private long timestamp;
     private final String TAG = HeartRateTestActivity.class.getSimpleName();
-    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heart_rate_test);
         ButterKnife.bind(this);
-        mp = MediaPlayer.create(this, R.raw.basic_rock);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Heart Rate");
@@ -111,7 +109,6 @@ public class HeartRateTestActivity extends BaseActivity implements BleManager.IB
 
                             if (heartRate != null) {
 
-                                mp.start();
                                 mHeartRateRrValueTextView.setText(String.format(Locale.getDefault(),
                                         "RR [ms]: %d", heartRate.body.rrData[0]));
 

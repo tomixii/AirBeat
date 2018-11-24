@@ -60,6 +60,8 @@ public class ImuActivity extends BaseActivity implements BleManager.IBleConnecti
     private MdsSubscription mMdsSubsription;
     private CsvLogger mCsvLogger;
     private boolean isLogSaved = false;
+    MediaPlayer mp;
+    private int counter;
 
     MediaPlayer mpX;
     MediaPlayer mpY;
@@ -70,6 +72,9 @@ public class ImuActivity extends BaseActivity implements BleManager.IBleConnecti
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imu);
         ButterKnife.bind(this);
+        mp = MediaPlayer.create(this, R.raw.mr_tea);
+        counter = 0;
+
 
         mpX = MediaPlayer.create(this, R.raw.basic_rock);
         mpY = MediaPlayer.create(this, R.raw.cymbal);
@@ -110,6 +115,20 @@ public class ImuActivity extends BaseActivity implements BleManager.IBleConnecti
 
                             ImuModel imuModel = new Gson().fromJson(data, ImuModel.class);
 
+                            if((Math.abs(imuModel.getBody().getArrayAcc()[0].getX()) > 5 ||
+                               Math.abs(imuModel.getBody().getArrayAcc()[0].getY()) > 5 ||
+                               Math.abs(imuModel.getBody().getArrayAcc()[0].getZ()) - 9.8 > 5)) {
+                                counter = 0;
+                                if(!mp.isPlaying()) {
+                                    mp.start();
+                                }
+                            } else if(mp.isPlaying()){
+                                counter++;
+                                if(counter > 10){
+                                    mp.pause();
+                                }
+
+                            }
                             mLinearaccXAxisTextView.setText(String.format(Locale.getDefault(), "x: %.6f", imuModel.getBody().getArrayAcc()[0].getX()));
                             mLinearaccYAxisTextView.setText(String.format(Locale.getDefault(), "y: %.6f", imuModel.getBody().getArrayAcc()[0].getY()));
                             mLinearaccZAxisTextView.setText(String.format(Locale.getDefault(), "z: %.6f", imuModel.getBody().getArrayAcc()[0].getZ()));
@@ -167,6 +186,7 @@ public class ImuActivity extends BaseActivity implements BleManager.IBleConnecti
 
     private void unSubscribe() {
         if (mMdsSubsription != null) {
+            mp.stop();
             mMdsSubsription.unsubscribe();
             mMdsSubsription = null;
         }
