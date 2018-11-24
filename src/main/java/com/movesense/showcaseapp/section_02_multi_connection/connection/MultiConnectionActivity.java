@@ -42,6 +42,7 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
     @BindView(R.id.multiConnection_selectedDeviceSerial_Tv_2) TextView mMultiConnectionSelectedDeviceSerialTv2;
     @BindView(R.id.multiConnection_selectedDeviceInfo_Ll_2) LinearLayout mMultiConnectionSelectedDeviceInfoLl2;
     @BindView(R.id.multiConnection_connect_Tv) TextView mMultiConnectionConnectTv;
+    @BindView(R.id.multiConnection_save_Tv) TextView mMultiConnectionSaveTv;
     @BindView(R.id.multiConnection_status_tv) TextView mMultiConnectionStatusTv;
 
     private final String TAG = MultiConnectionActivity.class.getSimpleName();
@@ -122,7 +123,7 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
         mCompositeSubscription.unsubscribe();
     }
 
-    @OnClick({R.id.add_movesense1Ll, R.id.add_movesense2Ll, R.id.multiConnection_connect_Tv})
+    @OnClick({R.id.add_movesense1Ll, R.id.add_movesense2Ll, R.id.multiConnection_connect_Tv, R.id.multiConnection_save_Tv})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.add_movesense1Ll:
@@ -134,6 +135,24 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
                 scannerFragment = new ScannerFragment();
                 scannerFragment.show(getSupportFragmentManager(), ScannerFragment.class.getName());
                 isAddDevice1Pressed = false;
+                break;
+            case R.id.multiConnection_save_Tv:
+
+                if (mRxBleDevice1 != null && mRxBleDevice2 != null) {
+
+                    if (mRxBleDevice1.getName().equals(mRxBleDevice2.getName())) {
+                        Toast.makeText(MultiConnectionActivity.this, "You can't connect to the same device twice", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    mMultiConnectionStatusTv.setText("Connecting...");
+                    blockUI();
+
+                    Mds.builder().build(MultiConnectionActivity.this).connect(mRxBleDevice1.getMacAddress(), null);
+                    Mds.builder().build(MultiConnectionActivity.this).connect(mRxBleDevice2.getMacAddress(), null);
+                } else {
+                    Toast.makeText(this, "Add device for connection", Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.multiConnection_connect_Tv:
 
@@ -183,6 +202,7 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
         mAddMovesense2Ll.setEnabled(false);
 
         mMultiConnectionConnectTv.setEnabled(false);
+        mMultiConnectionSaveTv.setEnabled(false);
     }
 
     private void clearUI() {
@@ -193,7 +213,9 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
         mAddMovesense2Ll.setBackground(ContextCompat.getDrawable(this, R.drawable.black_stroke));
 
         mMultiConnectionConnectTv.setEnabled(true);
+        mMultiConnectionSaveTv.setEnabled(true);
         mMultiConnectionConnectTv.setBackground(ContextCompat.getDrawable(this, R.drawable.black_stroke));
+        mMultiConnectionSaveTv.setBackground(ContextCompat.getDrawable(this, R.drawable.black_stroke));
     }
 
     @Override
