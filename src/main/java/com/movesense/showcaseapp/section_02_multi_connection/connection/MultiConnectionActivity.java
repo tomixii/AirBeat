@@ -15,6 +15,7 @@ import com.movesense.mds.internal.connectivity.MovesenseConnectedDevices;
 import com.movesense.mds.internal.connectivity.MovesenseDevice;
 import com.movesense.showcaseapp.R;
 import com.movesense.showcaseapp.bluetooth.MdsRx;
+import com.movesense.showcaseapp.google_drive.SendLogsToGoogleDriveActivity;
 import com.movesense.showcaseapp.model.MdsConnectedDevice;
 import com.movesense.showcaseapp.model.MdsDeviceInfoNewSw;
 import com.movesense.showcaseapp.model.MdsDeviceInfoOldSw;
@@ -109,7 +110,7 @@ public class MultiConnectionActivity extends AppCompatActivity implements Scanne
                             }
 
                             if (isFirstDeviceConnected && isSecondDeviceConnected) {
-                                startActivity(new Intent(MultiConnectionActivity.this, MultiSensorUsageActivity.class));
+                                startActivity(new Intent(MultiConnectionActivity.this, SendLogsToGoogleDriveActivity.class));
                             }
                         }
                     }
