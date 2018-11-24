@@ -51,6 +51,8 @@ import com.google.api.services.drive.model.FileList;
 import com.movesense.showcaseapp.BuildConfig;
 import com.movesense.showcaseapp.R;
 import com.movesense.showcaseapp.logs.LogsListAdapter;
+import com.movesense.showcaseapp.section_02_multi_connection.connection.MultiConnectionActivity;
+import com.movesense.showcaseapp.section_02_multi_connection.sensor_usage.MultiSensorUsageActivity;
 
 import java.io.File;
 import java.io.IOException;
@@ -148,8 +150,21 @@ public class SendLogsToGoogleDriveActivity extends AppCompatActivity implements 
     @OnItemClick(R.id.logsFileListView)
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         // Show dialog for open / send file
-        final File clickedFile = logsFileList.get(position);
+        // Open File
+/*
+* */
+        //intent.setAction(android.content.Intent.ACTION_VIEW);
+        //Uri uri = FileProvider.getUriForFile(SendLogsToGoogleDriveActivity.this,
+          //      BuildConfig.APPLICATION_ID, clickedFile);
+        //intent.setDataAndType(uri, getMimeType(clickedFile.getName()));
+        //startActivity(intent);
 
+        String path = logsFileList.get(position).getPath();
+        System.out.println("path1: " + path);
+        Intent intent = new Intent(SendLogsToGoogleDriveActivity.this, MultiSensorUsageActivity.class).putExtra("path", path);
+        startActivity(intent);
+
+        /*
         new AlertDialog.Builder(this)
                 .setTitle("Choose a file action")
                 .setItems(new CharSequence[]{"Open file", "Send file to Google Drive"},
@@ -177,7 +192,7 @@ public class SendLogsToGoogleDriveActivity extends AppCompatActivity implements 
                             }
                         })
                 .show();
-
+        */
     }
 
     private String getMimeType(String url) {

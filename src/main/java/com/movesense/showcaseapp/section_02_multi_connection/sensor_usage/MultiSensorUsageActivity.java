@@ -28,9 +28,16 @@ import com.movesense.showcaseapp.model.MagneticField;
 import com.movesense.showcaseapp.model.MdsConnectedDevice;
 import com.movesense.showcaseapp.model.TemperatureSubscribeModel;
 import com.movesense.showcaseapp.section_00_mainView.MainViewActivity;
+import com.movesense.showcaseapp.section_01_movesense.tests.LinearAccelerationTestActivity;
 import com.movesense.showcaseapp.utils.FormatHelper;
 import com.movesense.showcaseapp.utils.ThrowableToastingAction;
+import com.movesense.showcaseapp.csv.CsvLogger;
 
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Locale;
 
 import butterknife.BindView;
@@ -80,6 +87,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     @BindView(R.id.multiSensorUsage_temperature_device2_value_tv) TextView mMultiSensorUsageTemperatureDevice2ValueTv;
     @BindView(R.id.multiSensorUsage_temperature_switch) SwitchCompat mMultiSensorUsageTemperatureSwitch;
 
+
     private MultiSensorUsagePresenter mPresenter;
     private CompositeSubscription mCompositeSubscription;
 
@@ -97,6 +105,11 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private MdsSubscription mMdsMagneticFieldSubscription2;
     private MdsSubscription mMdsTemperatureSubscription1;
     private MdsSubscription mMdsTemperatureSubscription2;
+    private CsvLogger mCsvLogger;
+    private boolean isLogSaved = false;
+    private boolean isTeacher = true;
+    private String choreoPath;
+    private String[][] data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +119,29 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Multi Sensor Usage");
+        }
+        if(isTeacher) {
+            mCsvLogger = new CsvLogger();
+        } else {
+        }
+        choreoPath = getIntent().getStringExtra("path");
+
+
+        String line;
+        System.out.println(choreoPath);
+        try (BufferedReader br = new BufferedReader(new FileReader(choreoPath))) {
+
+            while ((line = br.readLine()) != null) {
+
+                // use comma as separator
+                String[] moment = line.split(";");
+
+                //System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         mPresenter = new MultiSensorUsagePresenter(this);
@@ -146,6 +182,10 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         if (isChecked) {
             Log.d(TAG, "=== Linear Acceleration Subscribe ===");
 
+            isLogSaved = false;
+
+            mCsvLogger.checkRuntimeWriteExternalStoragePermission(this, this);
+
             mMdsLinearAccSubscription1 = Mds.builder().build(this).subscribe("suunto://MDS/EventListener",
                     FormatHelper.formatContractToJson(MovesenseConnectedDevices.getConnectedDevice(0)
                             .getSerial(), LINEAR_ACC_PATH), new MdsNotificationListener() {
@@ -157,6 +197,16 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                             if (linearAccelerationData != null) {
 
                                 LinearAcceleration.Array arrayData = linearAccelerationData.body.array[0];
+                                if(isTeacher) {
+
+                                    mCsvLogger.appendHeader("Sensor; Timestamp (ms); X: (m/s^2); Y: (m/s^2); Z: (m/s^2)");
+
+                                    mCsvLogger.appendLine(String.format(Locale.getDefault(),
+                                            "1;%d;%.6f;%.6f;%.6f", linearAccelerationData.body.timestamp,
+                                            arrayData.x, arrayData.y, arrayData.z));
+                                } else {
+
+                                }
 
                                 mMultiSensorUsageLinearAccDevice1XTv.setText(String.format(Locale.getDefault(),
                                         "x: %.6f", arrayData.x));
@@ -187,6 +237,12 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
 
                                 LinearAcceleration.Array arrayData = linearAccelerationData.body.array[0];
 
+                                mCsvLogger.appendHeader("Sensor; Timestamp (ms); X: (m/s^2); Y: (m/s^2); Z: (m/s^2)");
+
+                                mCsvLogger.appendLine(String.format(Locale.getDefault(),
+                                        "2;%d;%.6f;%.6f;%.6f", linearAccelerationData.body.timestamp,
+                                        arrayData.x, arrayData.y, arrayData.z));
+
                                 mMultiSensorUsageLinearAccDevice2XTv.setText(String.format(Locale.getDefault(),
                                         "x: %.6f", arrayData.x));
                                 mMultiSensorUsageLinearAccDevice2YTv.setText(String.format(Locale.getDefault(),
@@ -206,6 +262,10 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         } else {
             mMdsLinearAccSubscription1.unsubscribe();
             mMdsLinearAccSubscription2.unsubscribe();
+            if (!isLogSaved) {
+                mCsvLogger.finishSavingLogs(this, TAG);
+                isLogSaved = true;
+            }
             Log.d(TAG, "=== Linear Acceleration Unubscribe ===");
         }
 
@@ -217,7 +277,6 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
      *
      * @param buttonView
      * @param isChecked
-     */
     @OnCheckedChanged(R.id.multiSensorUsage_angularVelocity_switch)
     public void onAngularVelocityCheckedChange(final CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
@@ -286,13 +345,13 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         }
     }
 
+     */
 
     /**
      * Magnetic Field Switch
      *
      * @param buttonView
      * @param isChecked
-     */
     @OnCheckedChanged(R.id.multiSensorUsage_magneticField_switch)
     public void onMagneticFieldCheckedChange(final CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
@@ -360,13 +419,13 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         }
     }
 
+     */
     /**
      * Temperature Switch
      *
-     * @param buttonView
-     * @param isChecked
-     */
-    @OnCheckedChanged(R.id.multiSensorUsage_temperature_switch)
+    */
+    /*
+     @OnCheckedChanged(R.id.multiSensorUsage_temperature_switch)
     public void onTemperatureCheckedChange(final CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
             Log.d(TAG, "=== Temperature Subscribe ===");
@@ -421,6 +480,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     }
 
 
+     */
     @Override
     public void setPresenter(MultiSensorUsageContract.Presenter presenter) {
 
