@@ -110,7 +110,8 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private CsvLogger mCsvLogger;
     private boolean isLogSaved = false;
     private boolean isTeacher = true;
-    private String coreoPath;
+    private String choreoPath;
+    //private String[][] data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,12 +126,12 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
             mCsvLogger = new CsvLogger();
         } else {
         }
-            coreoPath = getIntent().getStringExtra("path");
+        choreoPath = getIntent().getStringExtra("path");
 
 
         String line;
-        System.out.println(coreoPath);
-        try (BufferedReader br = new BufferedReader(new FileReader(coreoPath))) {
+        System.out.println(choreoPath);
+        try (BufferedReader br = new BufferedReader(new FileReader(choreoPath))) {
 
             //For sensor one
             List<Float> timestp1 = new ArrayList<Float>();
@@ -215,57 +216,6 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                 }, new ThrowableToastingAction(this)));
     }
 
-    /*protected void readFile() {
-        //TODO: reading from file
-        //File file = new File(filename);
-        //BufferedReader reader = null;
-        List<Float> timestp = new ArrayList<Float>();
-        List<Float> x = new ArrayList<Float>();
-        List<Float> y = new ArrayList<Float>();
-        List<Float> z = new ArrayList<Float>();
-        try {
-            //reader = new BufferedReader(new FileReader(file));
-            String line = "1;52958;8,265104;-8,971012;21,792213";//null;
-            String[] parts;
-            //line = reader.readLine();
-            //while ((parts = line.split(";")) != null) {
-            parts = line.split(";");
-
-            timestp.add(Float.parseFloat(parts[1]));
-
-            String[] xparts;
-            xparts = parts[2].split(",");
-            x.add(Float.parseFloat(xparts[0] + "." + xparts[1]));
-
-            String[] yparts;
-            yparts = parts[3].split(",");
-            y.add(Float.parseFloat(yparts[0] + "." + yparts[1]));
-
-            String[] zparts;
-            zparts = parts[4].split(",");
-            z.add(Float.parseFloat(zparts[0] + "." + zparts[1]));
-            //}
-            System.out.print("[");
-            for(Float it : x) {
-                System.out.print(it.toString() + ", JEEJEEJEE");
-            }
-            System.out.print("]");
-        } /*catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }// finally {
-            /*try {
-                //if (reader != null) {
-                //    reader.close();
-                //}
-                int i = 2;
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }*/
-
     /**
      * Linear Acceleration Switch
      *
@@ -302,40 +252,6 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                                 } else {
 
                                 }
-                                ///////////////////////////readFile();
-
-                                /*List<Float> timestp = new ArrayList<Float>();
-                                List<Float> x = new ArrayList<Float>();
-                                List<Float> y = new ArrayList<Float>();
-                                List<Float> z = new ArrayList<Float>();
-
-                                //reader = new BufferedReader(new FileReader(file));
-                                String line = "1;52958;8,265104;-8,971012;21,792213";//null;
-                                String[] parts;
-                                //line = reader.readLine();
-                                //while ((parts = line.split(";")) != null) {
-                                parts = line.split(";");
-
-                                timestp.add(Float.parseFloat(parts[1]));
-
-                                String[] xparts;
-                                xparts = parts[2].split(",");
-                                x.add(Float.parseFloat(xparts[0] + "." + xparts[1]));
-
-                                String[] yparts;
-                                yparts = parts[3].split(",");
-                                y.add(Float.parseFloat(yparts[0] + "." + yparts[1]));
-
-                                String[] zparts;
-                                zparts = parts[4].split(",");
-                                z.add(Float.parseFloat(zparts[0] + "." + zparts[1]));
-                                //}
-                                System.out.print("[");
-                                for(Float it : x) {
-                                    System.out.print(it.toString() + ", JEEJEEJEE");
-                                }
-                                System.out.print("]");*/
-                                //////////////////////
                                 mMultiSensorUsageLinearAccDevice1XTv.setText(String.format(Locale.getDefault(),
                                         "x: %.6f", arrayData.x));
                                 mMultiSensorUsageLinearAccDevice1YTv.setText(String.format(Locale.getDefault(),

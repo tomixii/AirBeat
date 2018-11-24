@@ -22,10 +22,7 @@ public class MainViewActivity extends AppCompatActivity {
 
     private final String TAG = MainViewActivity.class.getSimpleName();
 
-    @BindView(R.id.mainView_movesense_Ll) RelativeLayout mMainViewMovesenseLl;
     @BindView(R.id.mainView_multiConnection_Ll) RelativeLayout mMainViewMultiConnectionLl;
-    @BindView(R.id.mainView_dfu_Ll) RelativeLayout mMainViewDfuLl;
-    @BindView(R.id.mainView_savedData_Ll) RelativeLayout mMainViewSavedDataLl;
     @BindView(R.id.mainView_appVersion_tv) TextView mMainViewAppVersionTv;
     @BindView(R.id.mainView_libraryVersion_tv) TextView mMainViewLibraryVersionTv;
 
@@ -44,20 +41,11 @@ public class MainViewActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.mainView_movesense_Ll, R.id.mainView_multiConnection_Ll, R.id.mainView_dfu_Ll, R.id.mainView_savedData_Ll})
+    @OnClick({R.id.mainView_multiConnection_Ll})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.mainView_movesense_Ll:
-                startActivity(new Intent(MainViewActivity.this, MovesenseActivity.class));
-                break;
             case R.id.mainView_multiConnection_Ll:
                 startActivity(new Intent(MainViewActivity.this, MultiConnectionActivity.class));
-                break;
-            case R.id.mainView_dfu_Ll:
-                startActivity(new Intent(MainViewActivity.this, DfuActivity2.class));
-                break;
-            case R.id.mainView_savedData_Ll:
-                startActivity(new Intent(MainViewActivity.this, SendLogsToGoogleDriveActivity.class));
                 break;
         }
     }
