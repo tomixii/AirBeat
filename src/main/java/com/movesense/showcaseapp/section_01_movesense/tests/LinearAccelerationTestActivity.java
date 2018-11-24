@@ -206,6 +206,9 @@ public class LinearAccelerationTestActivity extends BaseActivity implements BleM
                                 zAxisTextView.setText(String.format(Locale.getDefault(),
                                         "z: %.6f", arrayData.z));
 
+                                double totalAcceleration = Math.sqrt(Math.pow(arrayData.x, 2) + Math.pow(arrayData.y, 2) + Math.pow(arrayData.z, 2));
+
+
                                 Log.e(LOG_TAG, "onNotification: timestamp: " + linearAccelerationData.body.timestamp + " x: " + arrayData.x);
                                 Log.e(LOG_TAG, "onNotification: lineData.getEntryCount(): " + mLineData.getEntryCount());
                                 mLineData.addEntry(new Entry(linearAccelerationData.body.timestamp / 100, (float) arrayData.x), 0);

@@ -18,9 +18,13 @@ import com.movesense.showcaseapp.R;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.TimeZone;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CsvLogger {
 
@@ -59,6 +63,35 @@ public class CsvLogger {
             MediaScannerConnection.scanFile(context, new String[]{file.getPath()}, null, null);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public File getLogFile() {
+        String filename = "2018_11_24T18_48_14Z_589_1750300.csv"
+        File file = new File(filename);
+        BufferedReader reader = null;
+
+        List<Float> timestp = new ArrayList<Float>();
+        List<Float> x = new ArrayList<Float>();
+        List<Float> y = new ArrayList<Float>();
+        List<Float> z = new ArrayList<Float>();
+
+        try {
+            reader = new BufferedReader(new FileReader(file));
+            String line = null;
+
+            while ((line = reader.readLine()) != null) {
+                //list.add(Integer.parseInt(text));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+            }
         }
     }
 
