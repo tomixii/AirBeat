@@ -27,6 +27,7 @@
             <RelativeLayout
                 android:id="@+id/mainView_multiConnection_Ll"
                 android:layout_width="0dp"
+                android:shape="oval"
                 android:layout_height="match_parent"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
@@ -35,10 +36,11 @@
 
                 <ImageView
                     android:layout_width="match_parent"
+                    android:shape="oval"
                     android:layout_height="match_parent"
                     android:layout_above="@id/mainView_multiConnection_text"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/google_circles"/>
+                    android:src="@drawable/flash_circle"/>
 
 
                 <TextView
@@ -61,22 +63,5 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/mainView_libraryVersion_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:text="@string/library_version"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <TextView
-        android:id="@+id/mainView_appVersion_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:text="@string/application_version"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@id/mainView_libraryVersion_tv"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color name="colorPrimary">#F27B7B</color>
-<color name="colorPrimaryDark">#F26161</color>
+<color name="colorPrimary">#f94646</color>
+<color name="colorPrimaryDark">#bc0303</color>
 <color name="colorAccent">#B2EEE6</color>
 
 <color name="inactiveTintColor">#7d211e1e</color>
 
-<color name="colorBackground">#F99192</color>
+<color name="colorBackground">#FD7767</color>
 <color name="colorText">#FFF</color>
 <color name="colorRed">#232356</color>
 <!--<color name="colorRed">#d3083b</color>-->
 <color name="colorGreen">#309d71</color>
 
-<color name="colorMainViewCardBackground">#F16D6D</color>
+<color name="colorMainViewCardBackground">#f94646</color>
 </resources>
