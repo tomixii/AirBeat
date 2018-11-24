@@ -34,6 +34,10 @@ import com.movesense.showcaseapp.utils.ThrowableToastingAction;
 import com.movesense.showcaseapp.csv.CsvLogger;
 
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Locale;
 
 import butterknife.BindView;
@@ -104,6 +108,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private CsvLogger mCsvLogger;
     private boolean isLogSaved = false;
     private boolean isTeacher = true;
+    private String coreoPath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,7 +122,25 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         if(isTeacher) {
             mCsvLogger = new CsvLogger();
         } else {
+        }
+            coreoPath = getIntent().getStringExtra("path");
 
+
+        String line;
+        System.out.println(coreoPath);
+        try (BufferedReader br = new BufferedReader(new FileReader(coreoPath))) {
+
+            while ((line = br.readLine()) != null) {
+
+                // use comma as separator
+                String[] data = line.split(";");
+
+                System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         mPresenter = new MultiSensorUsagePresenter(this);
@@ -253,7 +276,6 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
      *
      * @param buttonView
      * @param isChecked
-     */
     @OnCheckedChanged(R.id.multiSensorUsage_angularVelocity_switch)
     public void onAngularVelocityCheckedChange(final CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
@@ -322,13 +344,13 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         }
     }
 
+     */
 
     /**
      * Magnetic Field Switch
      *
      * @param buttonView
      * @param isChecked
-     */
     @OnCheckedChanged(R.id.multiSensorUsage_magneticField_switch)
     public void onMagneticFieldCheckedChange(final CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
@@ -396,13 +418,13 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         }
     }
 
+     */
     /**
      * Temperature Switch
      *
-     * @param buttonView
-     * @param isChecked
-     */
-    @OnCheckedChanged(R.id.multiSensorUsage_temperature_switch)
+    */
+    /*
+     @OnCheckedChanged(R.id.multiSensorUsage_temperature_switch)
     public void onTemperatureCheckedChange(final CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
             Log.d(TAG, "=== Temperature Subscribe ===");
@@ -457,6 +479,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     }
 
 
+     */
     @Override
     public void setPresenter(MultiSensorUsageContract.Presenter presenter) {
 

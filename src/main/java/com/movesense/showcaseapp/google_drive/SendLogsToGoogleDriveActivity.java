@@ -150,18 +150,19 @@ public class SendLogsToGoogleDriveActivity extends AppCompatActivity implements 
     @OnItemClick(R.id.logsFileListView)
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         // Show dialog for open / send file
-        final File clickedFile = logsFileList.get(position);
         // Open File
 /*
-        Intent intent = new Intent();
-        intent.setAction(android.content.Intent.ACTION_VIEW);
-        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        Uri uri = FileProvider.getUriForFile(SendLogsToGoogleDriveActivity.this,
-                BuildConfig.APPLICATION_ID, clickedFile);
-        intent.setDataAndType(uri, getMimeType(clickedFile.getName()));
-        startActivity(intent);
 * */
-        startActivity(new Intent(SendLogsToGoogleDriveActivity.this, MultiSensorUsageActivity.class));
+        //intent.setAction(android.content.Intent.ACTION_VIEW);
+        //Uri uri = FileProvider.getUriForFile(SendLogsToGoogleDriveActivity.this,
+          //      BuildConfig.APPLICATION_ID, clickedFile);
+        //intent.setDataAndType(uri, getMimeType(clickedFile.getName()));
+        //startActivity(intent);
+
+        String path = logsFileList.get(position).getPath();
+        System.out.println("path1: " + path);
+        Intent intent = new Intent(SendLogsToGoogleDriveActivity.this, MultiSensorUsageActivity.class).putExtra("path", path);
+        startActivity(intent);
 
         /*
         new AlertDialog.Builder(this)
