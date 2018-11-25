@@ -117,7 +117,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private boolean isTeacher;
     private String choreoPath;
     private int time = 0;
-    private int treshold = 5;
+    private int treshold = 15;
     MediaPlayer fail;
     MediaPlayer music;
     private boolean choreoStarted = false;
@@ -280,12 +280,15 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                                             "1;%d;%.6f;%.6f;%.6f", linearAccelerationData.body.timestamp,
                                             arrayData.x, arrayData.y, arrayData.z));
                                 } else if(time < sensor1.size()){
-                                    if (Math.abs(sensor1.get(time) - totalAccThis) > treshold) {
+                                    boolean prev = time > 0 && sensor1.get(time - 1) > treshold;
+                                    boolean next = time < sensor1.size() - 1 &&  sensor1.get(time + 1) > treshold;
+                                    if (Math.abs(sensor1.get(time) - totalAccThis) > treshold || next || prev) {
                                         fail.start();
                                     }
 
                                 } else {
                                     practiceEnded = true;
+                                    music.pause();
                                 }
                                 mMultiSensorUsageLinearAccDevice1XTv.setText(String.format(Locale.getDefault(),
                                         "x: %.6f", arrayData.x));
@@ -324,11 +327,14 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                                             "2;%d;%.6f;%.6f;%.6f", linearAccelerationData.body.timestamp,
                                             arrayData.x, arrayData.y, arrayData.z));
                                 } else if (time < sensor2.size()){
-                                    if (Math.abs(sensor2.get(time) - totalAccThis) > treshold) {
+                                    boolean prev = time > 0 && sensor2.get(time - 1) > treshold;
+                                    boolean next = time < sensor2.size() - 1 &&  sensor1.get(time + 1) > treshold;
+                                    if (Math.abs(sensor2.get(time) - totalAccThis) > treshold || next || prev) {
                                         fail.start();
                                     }
                                 } else {
                                     practiceEnded = true;
+                                    music.pause();
                                 }
                                 mMultiSensorUsageLinearAccDevice2XTv.setText(String.format(Locale.getDefault(),
                                         "x: %.6f", arrayData.x));
