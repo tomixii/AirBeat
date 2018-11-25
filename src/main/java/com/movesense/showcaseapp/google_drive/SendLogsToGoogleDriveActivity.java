@@ -161,7 +161,7 @@ public class SendLogsToGoogleDriveActivity extends AppCompatActivity implements 
 
         String path = logsFileList.get(position).getPath();
         System.out.println("path1: " + path);
-        Intent intent = new Intent(SendLogsToGoogleDriveActivity.this, MultiSensorUsageActivity.class).putExtra("path", path);
+        Intent intent = new Intent(SendLogsToGoogleDriveActivity.this, MultiSensorUsageActivity.class).putExtra("path", path).putExtra("teacher", false);
         startActivity(intent);
 
         /*

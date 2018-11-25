@@ -23,6 +23,10 @@ public class MainViewActivity extends AppCompatActivity {
     private final String TAG = MainViewActivity.class.getSimpleName();
     @BindView(R.id.mainView_movesense_Ll) RelativeLayout mMainViewMovesenseLl;
     @BindView(R.id.mainView_multiConnection_Ll) RelativeLayout mMainViewMultiConnectionLl;
+    @BindView(R.id.mainView_appVersion_tv) TextView mMainViewAppVersionTv;
+    @BindView(R.id.mainView_libraryVersion_tv) TextView mMainViewLibraryVersionTv;
+    //@BindView(R.id.mainView_movesense_tv) TextView mMainViewLibraryVersionTv;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
