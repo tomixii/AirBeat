@@ -23,9 +23,6 @@ public class MainViewActivity extends AppCompatActivity {
     private final String TAG = MainViewActivity.class.getSimpleName();
 
     @BindView(R.id.mainView_multiConnection_Ll) RelativeLayout mMainViewMultiConnectionLl;
-    @BindView(R.id.mainView_appVersion_tv) TextView mMainViewAppVersionTv;
-    @BindView(R.id.mainView_libraryVersion_tv) TextView mMainViewLibraryVersionTv;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +32,6 @@ public class MainViewActivity extends AppCompatActivity {
 
         String versionName = BuildConfig.VERSION_NAME;
         String libraryVersion = BuildConfig.MDS_VERSION;
-
-        mMainViewAppVersionTv.setText(getString(R.string.application_version, versionName));
-        mMainViewLibraryVersionTv.setText(getString(R.string.library_version, libraryVersion));
 
     }
 
