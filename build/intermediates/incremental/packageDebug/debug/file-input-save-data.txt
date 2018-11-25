@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Sat Nov 24 15:45:40 EET 2018
-1.base=C\:\\Users\\Tomi\\Documents\\Programming\\AirBeat\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+#Sun Nov 25 02:01:34 EET 2018
+1.base=C\:\\Users\\elisa\\Junction\\AirBeat\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2
 1.set=NATIVE_RESOURCE
 0.path=classes.dex
 0.set=DEX
-0.base=C\:\\Users\\Tomi\\Documents\\Programming\\AirBeat\\build\\intermediates\\transforms\\dexMerger\\debug\\24
+0.base=C\:\\Users\\elisa\\Junction\\AirBeat\\build\\intermediates\\transforms\\dexMerger\\debug\\24
 1.path=lib/armeabi-v7a/libmds.so

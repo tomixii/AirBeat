@@ -21,7 +21,7 @@ public class ImuActivity_ViewBinding implements Unbinder {
 
   private View view2131165303;
 
-  private View view2131165453;
+  private View view2131165450;
 
   @UiThread
   public ImuActivity_ViewBinding(ImuActivity target) {
@@ -55,7 +55,7 @@ public class ImuActivity_ViewBinding implements Unbinder {
     target.mConnectedDeviceSwVersionTextView = Utils.findRequiredViewAsType(source, R.id.connected_device_swVersion_textView, "field 'mConnectedDeviceSwVersionTextView'", TextView.class);
     view = Utils.findRequiredView(source, R.id.switchSubscription, "field 'mSwitchSubscription' and method 'onSwitchCheckedChange'");
     target.mSwitchSubscription = Utils.castView(view, R.id.switchSubscription, "field 'mSwitchSubscription'", SwitchCompat.class);
-    view2131165453 = view;
+    view2131165450 = view;
     ((CompoundButton) view).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
       @Override
       public void onCheckedChanged(CompoundButton p0, boolean p1) {
@@ -99,7 +99,7 @@ public class ImuActivity_ViewBinding implements Unbinder {
     view2131165302 = null;
     ((CompoundButton) view2131165303).setOnCheckedChangeListener(null);
     view2131165303 = null;
-    ((CompoundButton) view2131165453).setOnCheckedChangeListener(null);
-    view2131165453 = null;
+    ((CompoundButton) view2131165450).setOnCheckedChangeListener(null);
+    view2131165450 = null;
   }
 }
