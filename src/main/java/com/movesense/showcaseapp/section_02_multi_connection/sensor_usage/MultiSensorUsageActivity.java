@@ -3,6 +3,7 @@ package com.movesense.showcaseapp.section_02_multi_connection.sensor_usage;
 import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
@@ -38,10 +39,12 @@ import com.movesense.showcaseapp.csv.CsvLogger;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -112,25 +115,32 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     private boolean isLogSaved = false;
     private boolean isTeacher;
     private String choreoPath;
-    //For sensor one
-    List<Float> timestp1 = new ArrayList<Float>();
-    List<Float> x1 = new ArrayList<Float>();
-    List<Float> y1 = new ArrayList<Float>();
-    List<Float> z1 = new ArrayList<Float>();
-
-    //For sensor two
-    List<Float> timestp2 = new ArrayList<Float>();
-    List<Float> x2 = new ArrayList<Float>();
-    List<Float> y2 = new ArrayList<Float>();
-    List<Float> z2 = new ArrayList<Float>();
+    private int moment = 0;
+    private int treshold = 10;
+    MediaPlayer fail;
+    private boolean choreoStarted = false;
+    private int startChoreoTreshold = 15;
+    private boolean practiceIsOn = false;
+    private boolean practiceEnded = false;
 
     //private String[][] data;
+
+    //For sensor one
+    private Map<Integer, Float> sensor1 = new HashMap<Integer, Float>();
+    private int startTime1 = 0;
+    private int maxTime1;
+
+    //For sensor two
+    private Map<Integer, Float> sensor2 = new HashMap<Integer, Float>();
+    private int startTime2 = 0;
+    private int maxTime2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_sensor_usage);
         ButterKnife.bind(this);
+        fail = MediaPlayer.create(this, R.raw.fail);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Multi Sensor Usage");
@@ -151,42 +161,58 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
 
                     //System.out.println(data[0] + ", " + data[1] + ", " + data[2] + ", " + data[3]);
                     if (data[0].equals("1")) {
-                        timestp1.add(Float.parseFloat(data[1]));
 
                         //Split the decimal separated by "," and rejoin them with "." as separator
                         //Then parse to float
                         String[] xparts;
                         xparts = data[2].split(",");
-                        x1.add(Float.parseFloat(xparts[0] + "." + xparts[1]));
+                        Float x1 = Float.parseFloat(xparts[0] + "." + xparts[1]);
 
                         String[] yparts;
                         yparts = data[3].split(",");
-                        y1.add(Float.parseFloat(yparts[0] + "." + yparts[1]));
+                        Float y1 = Float.parseFloat(yparts[0] + "." + yparts[1]);
 
                         String[] zparts;
                         zparts = data[4].split(",");
-                        z1.add(Float.parseFloat(zparts[0] + "." + zparts[1]));
+                        Float z1 = Float.parseFloat(zparts[0] + "." + zparts[1]);
 
+                        float totalAcc = (float) Math.sqrt(Math.pow(x1, 2) + Math.pow(y1, 2) + Math.pow(z1, 2));
+                        if(totalAcc > startChoreoTreshold || choreoStarted) {
+                            choreoStarted = true;
+                            sensor1.put(Integer.parseInt(data[1]) - startTime1, totalAcc);
+                            if(sensor1.size() == 1) {
+                                startTime1 = Integer.parseInt(data[1]);
+                            }
+                            maxTime1 = Integer.parseInt(data[1]) - startTime1;
+                        }
                     } else if (data[0].equals("2")) {
-                        timestp2.add(Float.parseFloat(data[1]));
 
                         String[] xparts;
                         xparts = data[2].split(",");
-                        x2.add(Float.parseFloat(xparts[0] + "." + xparts[1]));
+                        Float x2 = Float.parseFloat(xparts[0] + "." + xparts[1]);
 
                         String[] yparts;
                         yparts = data[3].split(",");
-                        y2.add(Float.parseFloat(yparts[0] + "." + yparts[1]));
+                        Float y2 = Float.parseFloat(yparts[0] + "." + yparts[1]);
 
                         String[] zparts;
                         zparts = data[4].split(",");
-                        z2.add(Float.parseFloat(zparts[0] + "." + zparts[1]));
+                        Float z2 = Float.parseFloat(zparts[0] + "." + zparts[1]);
+                        float totalAcc = (float) Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2) + Math.pow(z2, 2));
+                        if(totalAcc > startChoreoTreshold || choreoStarted) {
+                            choreoStarted = true;
+                            sensor2.put(Integer.parseInt(data[1]) - startTime2, totalAcc);
+                            if(sensor2.size() == 1) {
+                                startTime2 = Integer.parseInt(data[1]);
+                            }
+                            maxTime2 = Integer.parseInt(data[1]) - startTime2;
+                        }
                     }
                 }
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
         }
 
         mPresenter = new MultiSensorUsagePresenter(this);
@@ -224,12 +250,12 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
      */
     @OnCheckedChanged(R.id.multiSensorUsage_linearAcc_switch)
     public void onLinearAccCheckedChange(final CompoundButton buttonView, boolean isChecked) {
-        if (isChecked) {
+        if (isChecked ) {
             Log.d(TAG, "=== Linear Acceleration Subscribe ===");
 
             isLogSaved = false;
 
-            mCsvLogger.checkRuntimeWriteExternalStoragePermission(this, this);
+//            mCsvLogger.checkRuntimeWriteExternalStoragePermission(this, this);
 
             mMdsLinearAccSubscription1 = Mds.builder().build(this).subscribe("suunto://MDS/EventListener",
                     FormatHelper.formatContractToJson(MovesenseConnectedDevices.getConnectedDevice(0)
@@ -239,9 +265,13 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                             LinearAcceleration linearAccelerationData = new Gson().fromJson(
                                     s, LinearAcceleration.class);
 
-                            if (linearAccelerationData != null) {
+                            if (linearAccelerationData != null&& !practiceEnded) {
 
                                 LinearAcceleration.Array arrayData = linearAccelerationData.body.array[0];
+                                float totalAccThis = (float) Math.sqrt(Math.pow(arrayData.x, 2) + Math.pow(arrayData.y, 2) + Math.pow(arrayData.z, 2));
+                                if(totalAccThis > startChoreoTreshold || practiceIsOn){
+                                    practiceIsOn = true;
+                                }
                                 if(isTeacher) {
 
                                     mCsvLogger.appendHeader("Sensor; Timestamp (ms); X: (m/s^2); Y: (m/s^2); Z: (m/s^2)");
@@ -249,9 +279,14 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                                     mCsvLogger.appendLine(String.format(Locale.getDefault(),
                                             "1;%d;%.6f;%.6f;%.6f", linearAccelerationData.body.timestamp,
                                             arrayData.x, arrayData.y, arrayData.z));
-                                } else {
-                                }
+                                } else if(linearAccelerationData.body.timestamp <= maxTime1){
+                                    if (sensor1.get((int)linearAccelerationData.body.timestamp) - totalAccThis > treshold && practiceIsOn) {
+                                        fail.start();
+                                    }
 
+                                } else {
+                                    practiceEnded = true;
+                                }
                                 mMultiSensorUsageLinearAccDevice1XTv.setText(String.format(Locale.getDefault(),
                                         "x: %.6f", arrayData.x));
                                 mMultiSensorUsageLinearAccDevice1YTv.setText(String.format(Locale.getDefault(),
@@ -277,16 +312,26 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
                             LinearAcceleration linearAccelerationData = new Gson().fromJson(
                                     s, LinearAcceleration.class);
 
-                            if (linearAccelerationData != null) {
+                            if (linearAccelerationData != null&& !practiceEnded) {
 
                                 LinearAcceleration.Array arrayData = linearAccelerationData.body.array[0];
+                                float totalAccThis = (float) Math.sqrt(Math.pow(arrayData.x, 2) + Math.pow(arrayData.y, 2) + Math.pow(arrayData.z, 2));
+                                if(totalAccThis > startChoreoTreshold || practiceIsOn) {
+                                    practiceIsOn = true;
+                                }
+                                if(isTeacher) {
+                                    mCsvLogger.appendHeader("Sensor; Timestamp (ms); X: (m/s^2); Y: (m/s^2); Z: (m/s^2)");
 
-                                mCsvLogger.appendHeader("Sensor; Timestamp (ms); X: (m/s^2); Y: (m/s^2); Z: (m/s^2)");
-
-                                mCsvLogger.appendLine(String.format(Locale.getDefault(),
-                                        "2;%d;%.6f;%.6f;%.6f", linearAccelerationData.body.timestamp,
-                                        arrayData.x, arrayData.y, arrayData.z));
-
+                                    mCsvLogger.appendLine(String.format(Locale.getDefault(),
+                                            "2;%d;%.6f;%.6f;%.6f", linearAccelerationData.body.timestamp,
+                                            arrayData.x, arrayData.y, arrayData.z));
+                                } else if (linearAccelerationData.body.timestamp <= maxTime2){
+                                    if (sensor2.get((int)linearAccelerationData.body.timestamp) - totalAccThis > treshold && practiceIsOn) {
+                                        fail.start();
+                                    }
+                                } else {
+                                    practiceEnded = true;
+                                }
                                 mMultiSensorUsageLinearAccDevice2XTv.setText(String.format(Locale.getDefault(),
                                         "x: %.6f", arrayData.x));
                                 mMultiSensorUsageLinearAccDevice2YTv.setText(String.format(Locale.getDefault(),
@@ -306,7 +351,7 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
         } else {
             mMdsLinearAccSubscription1.unsubscribe();
             mMdsLinearAccSubscription2.unsubscribe();
-            if (!isLogSaved) {
+            if (!isLogSaved && isTeacher) {
                 mCsvLogger.finishSavingLogs(this, TAG);
                 isLogSaved = true;
             }
