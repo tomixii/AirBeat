@@ -1,486 +1,486 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:50:9-58:20
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:50:9-58:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:54:13-47
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:54:13-47
 	android:authorities
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:52:13-51
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:52:13-51
 	android:exported
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:53:13-37
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:51:13-67
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:51:13-67
 manifest
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\49e48917d3dfdaec84bd229e96d13667\AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\d9bf8191e3ce5cae7f74afb3e0b5e669\AndroidManifest.xml:17:1-22:12
-MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\49bf5434c694bf1e47252fed2571a5a0\AndroidManifest.xml:2:1-14:12
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\4827ba466be6821bcf93d278daaa0855\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\8ba43636277425244094ac878a2a12b8\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\4896e286e5e14577070eba26d6a0e8f9\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\1621513e9b8a20d472d83b2606a38865\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\7e36519ca4ff60fa3a672aea28146f47\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\0479d504d3ad1f87202e44e8279a8deb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\c093cb6b1e36a8708f6fcc82caef7346\AndroidManifest.xml:17:1-22:12
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:2:1-18:12
-MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\c648dc87734daf939b4df09a77ee13cd\AndroidManifest.xml:15:1-21:12
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\c55f01c140c360e89b22afe96268e6cc\AndroidManifest.xml:2:1-7:12
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\60fd425a32bd21daa7c5ad80477d995a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\77b070f54c5dd14e129a6d7b90d39b7f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\51137ae72c2fe1f1b642b6fb0e1c24ed\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\1615cf774565f7b3700f477c257402e4\AndroidManifest.xml:17:1-22:12
-MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\d96acc7e49b7a3bcf10057c6393ae072\AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\7f67ec13891cc0e978625f42b7b6d8af\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\9ace5799a4ef4e27facc2b6f9cbf8f57\AndroidManifest.xml:17:1-22:12
-MERGED from [:mdslib:1.28.1(1)-release] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\mdslib-1.28.1(1)-release.aar\4adea33ffff03812fc7f1332dd3057af\AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\95894cb194b26639575574a8bc9dd418\AndroidManifest.xml:2:1-11:12
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.2.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\proguard-rules-1.3.2.0.aar\6aad9ad3971fb8c1246bef46ee041aa2\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\ddaa6f70c1f5f052d43fbe82a85ffa84\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d4782e4dd27301d3f37278ff0641ac7\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\373470c58aca143e9b99474c2f54b4c1\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\60f0cbc5ac3037b6885dc6fde7e5b195\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\d416e60dc62a7210a2a079b83354c953\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\031fff1c2ef8a9880ce681fb6e85f921\AndroidManifest.xml:2:1-6:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\076176df8d030ba7274ab962ef9df90e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\73230e5c4ccb23ef1da5705b14495305\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2377845ca2a590526a689cd986d76869\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2111df70e64f11b62631e198c647c34b\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\e5a21c89cc6b12f764aa3a27e201d874\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\e5aae037294240a38a90c9edfb553a17\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\90f199a04ad6c2b2c005519d0d382d44\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\11c3ff506c6609385b050b860aaf13f0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\bebc23204f28a521c044acac5b8db327\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\f82f6b160ea88188c54ca6817e5c3703\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\7e209915b88af3f4460c400b87a16008\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\4c1ee218b22e28508cc0dbfc3c1be163\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\897db8af18b89f74ed10da3ea557b249\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\df0a0cc344b331953844205d8f603220\AndroidManifest.xml:17:1-22:12
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:2:1-18:12
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\5c8d18c8dc858d29f8bdb31aa6e52996\AndroidManifest.xml:15:1-21:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\18ea07890c2052a3a13e242015a59538\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\fc0efefb4e0ddf084f654620a81e0037\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\d0e457c8d5faa9d911c78f3b09b2628b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\face66c7e9d77f4776d21f6823ea9cbf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\47709de115f98995f54c7ee1af42594d\AndroidManifest.xml:17:1-22:12
+MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\ee484162ab7ad2936fb6484cd6b97826\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\3aaf737b79674d8b1a8e625a3c74bcfb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\2d2687191e8f4bd98a0da0fbbdbb1c18\AndroidManifest.xml:17:1-22:12
+MERGED from [:mdslib:1.28.1(1)-release] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\mdslib-1.28.1(1)-release.aar\c16755cd2db33ef7b2a09e3e85859e94\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\447adf74b84f9746f2ac680a44f93063\AndroidManifest.xml:2:1-11:12
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.2.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\proguard-rules-1.3.2.0.aar\44d712b6f289feb52e477f17584f7a84\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\cde40e80c36fed88d0f855a80f1c0dc8\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\8251aa581b0a7183ab0cbba3dda9932e\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\399c6ae826d1068a64157cf3d3109f4d\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\967cdaa8fcd5a70eab7e7b517922a1c4\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\aa553c1531d447e1b01c17edd042e5e7\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\7c86b4436e64c8acd40e8192385e97ec\AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\42dc795960d98927d1908a9fb8a5740d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92fb520de362e9e4690a8b8319afff3f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d74f91def1610d8c4fea4554170c8fc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6a101ac207480d5b172d633aad956efb\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
 	package
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:3:11-46
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:3:11-46
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:1-153:12
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:5:5-80
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:5:5-80
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:5:22-78
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:5:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:6:5-79
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:6:22-77
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:6:22-77
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:7:5-66
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:8:5-78
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:8:5-78
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:9:5-80
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:9:22-78
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:10:5-70
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:10:5-70
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:10:22-68
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:10:22-68
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:11:5-67
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:11:5-68
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:11:5-68
-MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\d96acc7e49b7a3bcf10057c6393ae072\AndroidManifest.xml:11:5-68
-MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\d96acc7e49b7a3bcf10057c6393ae072\AndroidManifest.xml:11:5-68
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:11:5-67
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:11:5-68
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:11:5-68
+MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\ee484162ab7ad2936fb6484cd6b97826\AndroidManifest.xml:11:5-68
+MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\ee484162ab7ad2936fb6484cd6b97826\AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:11:22-65
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:11:22-65
 uses-permission#android.permission.MANAGE_DOCUMENTS
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:12:5-74
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:12:22-72
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:12:22-72
 uses-feature#android.hardware.bluetooth_le
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:14:5-16:34
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:14:5-16:34
 	android:required
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:16:9-32
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:16:9-32
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:15:9-53
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:15:9-53
 application
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:18:5-151:19
-MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\49e48917d3dfdaec84bd229e96d13667\AndroidManifest.xml:12:5-20
-MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\49e48917d3dfdaec84bd229e96d13667\AndroidManifest.xml:12:5-20
-MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\49bf5434c694bf1e47252fed2571a5a0\AndroidManifest.xml:11:5-12:19
-MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\49bf5434c694bf1e47252fed2571a5a0\AndroidManifest.xml:11:5-12:19
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\4827ba466be6821bcf93d278daaa0855\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\4827ba466be6821bcf93d278daaa0855\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\1621513e9b8a20d472d83b2606a38865\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\1621513e9b8a20d472d83b2606a38865\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:22:5-26:19
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:16:5-53
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:16:5-53
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\95894cb194b26639575574a8bc9dd418\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\95894cb194b26639575574a8bc9dd418\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\ddaa6f70c1f5f052d43fbe82a85ffa84\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\ddaa6f70c1f5f052d43fbe82a85ffa84\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d4782e4dd27301d3f37278ff0641ac7\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d4782e4dd27301d3f37278ff0641ac7\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\373470c58aca143e9b99474c2f54b4c1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\373470c58aca143e9b99474c2f54b4c1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\60f0cbc5ac3037b6885dc6fde7e5b195\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\60f0cbc5ac3037b6885dc6fde7e5b195\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\d416e60dc62a7210a2a079b83354c953\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\d416e60dc62a7210a2a079b83354c953\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\031fff1c2ef8a9880ce681fb6e85f921\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\031fff1c2ef8a9880ce681fb6e85f921\AndroidManifest.xml:5:5-20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:18:5-151:19
+MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\e5a21c89cc6b12f764aa3a27e201d874\AndroidManifest.xml:12:5-20
+MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\e5a21c89cc6b12f764aa3a27e201d874\AndroidManifest.xml:12:5-20
+MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\90f199a04ad6c2b2c005519d0d382d44\AndroidManifest.xml:11:5-12:19
+MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\90f199a04ad6c2b2c005519d0d382d44\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\11c3ff506c6609385b050b860aaf13f0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\11c3ff506c6609385b050b860aaf13f0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\7e209915b88af3f4460c400b87a16008\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\7e209915b88af3f4460c400b87a16008\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:22:5-26:19
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:16:5-53
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:16:5-53
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\447adf74b84f9746f2ac680a44f93063\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\447adf74b84f9746f2ac680a44f93063\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\cde40e80c36fed88d0f855a80f1c0dc8\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\cde40e80c36fed88d0f855a80f1c0dc8\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\8251aa581b0a7183ab0cbba3dda9932e\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\8251aa581b0a7183ab0cbba3dda9932e\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\399c6ae826d1068a64157cf3d3109f4d\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\399c6ae826d1068a64157cf3d3109f4d\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\967cdaa8fcd5a70eab7e7b517922a1c4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\967cdaa8fcd5a70eab7e7b517922a1c4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\aa553c1531d447e1b01c17edd042e5e7\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\aa553c1531d447e1b01c17edd042e5e7\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\7c86b4436e64c8acd40e8192385e97ec\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\7c86b4436e64c8acd40e8192385e97ec\AndroidManifest.xml:5:5-20
 	android:supportsRtl
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:23:9-35
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:23:9-35
 	android:label
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:22:9-41
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:22:9-41
 	android:icon
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:21:9-43
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:21:9-43
 	android:allowBackup
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:24:9-40
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:24:9-40
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:19:9-34
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:19:9-34
 activity#com.movesense.showcaseapp.section_01_movesense.tests.LedTestActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:25:9-27:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:25:9-27:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:27:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:26:13-71
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:26:13-71
 activity#com.movesense.showcaseapp.section_01_movesense.tests.LinearAccelerationTestActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:28:9-30:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:28:9-30:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:30:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:30:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:29:13-86
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:29:13-86
 activity#com.movesense.showcaseapp.section_01_movesense.tests.HeartRateTestActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:31:9-33:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:31:9-33:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:33:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:33:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:32:13-77
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:32:13-77
 activity#com.movesense.showcaseapp.section_01_movesense.tests.TemperatureTestActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:34:9-36:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:34:9-36:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:36:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:36:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:35:13-79
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:35:13-79
 activity#com.movesense.showcaseapp.section_01_movesense.tests.MagneticFieldTestActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:37:9-39:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:37:9-39:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:39:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:39:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:38:13-81
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:38:13-81
 activity#com.movesense.showcaseapp.section_01_movesense.tests.AngularVelocityActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:40:9-42:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:40:9-42:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:42:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:42:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:41:13-79
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:41:13-79
 activity#com.movesense.showcaseapp.section_01_movesense.tests.MultiSubscribeActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:43:9-45:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:43:9-45:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:45:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:45:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:44:13-78
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:44:13-78
 activity#com.movesense.showcaseapp.google_drive.SendLogsToGoogleDriveActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:46:9-48:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:46:9-48:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:48:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:48:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:47:13-71
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:47:13-71
 service#com.movesense.showcaseapp.section_03_dfu.DfuService
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:60:9-63:38
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:60:9-63:38
 	android:enabled
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:62:13-35
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:62:13-35
 	android:exported
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:63:13-36
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:63:13-36
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:61:13-54
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:61:13-54
 receiver#com.movesense.showcaseapp.adb.AdbBridge
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:65:9-72:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:65:9-72:20
 	android:enabled
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:67:13-35
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:67:13-35
 	android:exported
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:68:13-36
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:68:13-36
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:66:13-42
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:66:13-42
 intent-filter#android.intent.action.MOVESENSE
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:69:13-71:29
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:69:13-71:29
 action#android.intent.action.MOVESENSE
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:70:17-73
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:70:17-73
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:70:25-71
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:70:25-71
 activity#com.movesense.showcaseapp.section_00_mainView.MainViewActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:74:9-83:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:74:9-83:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:76:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:76:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:75:13-65
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:75:13-65
 intent-filter#android.intent.action.MAIN+android.intent.action.MY_ACTION+android.intent.category.LAUNCHER
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:77:13-82:29
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:77:13-82:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:78:17-68
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:78:17-68
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:78:25-66
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:78:25-66
 action#android.intent.action.MY_ACTION
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:79:17-73
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:79:17-73
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:79:25-71
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:79:25-71
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:81:17-76
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:81:17-76
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:81:27-74
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:81:27-74
 activity#com.movesense.showcaseapp.section_01_movesense.MovesenseActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:84:9-86:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:84:9-86:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:86:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:86:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:85:13-67
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:85:13-67
 activity#com.movesense.showcaseapp.section_02_multi_connection.connection.MultiConnectionActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:87:9-89:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:87:9-89:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:89:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:89:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:88:13-91
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:88:13-91
 activity#com.movesense.showcaseapp.section_04_saved_data.SavedDataActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:90:9-92:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:90:9-92:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:92:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:92:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:91:13-68
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:91:13-68
 activity#com.movesense.showcaseapp.section_06_about.AboutActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:93:9-95:51
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:93:9-95:51
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:95:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:95:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:94:13-59
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:94:13-59
 activity#com.movesense.showcaseapp.section_01_movesense.sensors.sensors_list.SensorListActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:96:9-99:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:96:9-99:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:98:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:98:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:97:13-89
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:97:13-89
 activity#com.movesense.showcaseapp.section_03_dfu.DfuActivity2
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:100:9-103:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:100:9-103:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:102:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:102:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:101:13-56
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:101:13-56
 activity#com.movesense.showcaseapp.section_02_multi_connection.sensor_usage.MultiSensorUsageActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:104:9-107:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:104:9-107:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:106:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:106:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:105:13-94
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:105:13-94
 activity#com.movesense.showcaseapp.section_01_movesense.tests.EcgActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:108:9-112:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:108:9-112:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:110:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:110:13-49
 	android:configChanges
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:111:13-74
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:111:13-74
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:109:13-67
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:109:13-67
 activity#com.movesense.showcaseapp.section_01_movesense.tests.EcgActivityGraphView
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:114:9-118:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:114:9-118:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:116:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:116:13-49
 	android:configChanges
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:117:13-74
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:117:13-74
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:115:13-76
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:115:13-76
 activity#com.movesense.showcaseapp.section_01_movesense.tests.BatteryActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:119:9-122:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:119:9-122:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:121:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:121:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:120:13-71
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:120:13-71
 activity#com.movesense.showcaseapp.section_01_movesense.tests.AppInfoActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:123:9-126:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:123:9-126:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:125:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:125:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:124:13-71
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:124:13-71
 activity#com.movesense.showcaseapp.section_01_movesense.tests.ImuActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:127:9-130:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:127:9-130:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:129:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:129:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:128:13-67
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:128:13-67
 receiver#com.movesense.showcaseapp.bluetooth.BluetoothStatusReceiver
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:132:9-139:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:132:9-139:20
 	android:enabled
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:134:13-35
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:134:13-35
 	android:exported
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:135:13-37
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:135:13-37
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:133:13-62
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:133:13-62
 intent-filter#android.bluetooth.adapter.action.STATE_CHANGED
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:136:13-138:29
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:136:13-138:29
 action#android.bluetooth.adapter.action.STATE_CHANGED
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:137:17-88
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:137:17-88
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:137:25-86
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:137:25-86
 activity#com.movesense.showcaseapp.section_01_movesense.device_settings.DeviceSettingsActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:141:9-144:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:141:9-144:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:143:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:143:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:142:13-88
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:142:13-88
 activity#com.movesense.showcaseapp.BaseActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:145:9-146:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:145:9-146:20
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:145:19-47
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:145:19-47
 activity#com.movesense.showcaseapp.section_01_movesense.tests.MemoryDiagnosticActivity
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:147:9-150:20
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:147:9-150:20
 	android:screenOrientation
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:149:13-49
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:149:13-49
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:148:13-80
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:148:13-80
 uses-sdk
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\49e48917d3dfdaec84bd229e96d13667\AndroidManifest.xml:8:5-10:41
-MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\49e48917d3dfdaec84bd229e96d13667\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\d9bf8191e3ce5cae7f74afb3e0b5e669\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\d9bf8191e3ce5cae7f74afb3e0b5e669\AndroidManifest.xml:20:5-44
-MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\49bf5434c694bf1e47252fed2571a5a0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\49bf5434c694bf1e47252fed2571a5a0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\4827ba466be6821bcf93d278daaa0855\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\4827ba466be6821bcf93d278daaa0855\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\8ba43636277425244094ac878a2a12b8\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\8ba43636277425244094ac878a2a12b8\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\4896e286e5e14577070eba26d6a0e8f9\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\4896e286e5e14577070eba26d6a0e8f9\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\1621513e9b8a20d472d83b2606a38865\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\1621513e9b8a20d472d83b2606a38865\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\7e36519ca4ff60fa3a672aea28146f47\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\7e36519ca4ff60fa3a672aea28146f47\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\0479d504d3ad1f87202e44e8279a8deb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\0479d504d3ad1f87202e44e8279a8deb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\c093cb6b1e36a8708f6fcc82caef7346\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\c093cb6b1e36a8708f6fcc82caef7346\AndroidManifest.xml:20:5-44
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:7:5-9:41
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:7:5-9:41
-MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\c648dc87734daf939b4df09a77ee13cd\AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\c648dc87734daf939b4df09a77ee13cd\AndroidManifest.xml:19:5-43
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\c55f01c140c360e89b22afe96268e6cc\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\c55f01c140c360e89b22afe96268e6cc\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\60fd425a32bd21daa7c5ad80477d995a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\60fd425a32bd21daa7c5ad80477d995a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\77b070f54c5dd14e129a6d7b90d39b7f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\77b070f54c5dd14e129a6d7b90d39b7f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\51137ae72c2fe1f1b642b6fb0e1c24ed\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\51137ae72c2fe1f1b642b6fb0e1c24ed\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\1615cf774565f7b3700f477c257402e4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\1615cf774565f7b3700f477c257402e4\AndroidManifest.xml:20:5-44
-MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\d96acc7e49b7a3bcf10057c6393ae072\AndroidManifest.xml:7:5-9:41
-MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\d96acc7e49b7a3bcf10057c6393ae072\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\7f67ec13891cc0e978625f42b7b6d8af\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\7f67ec13891cc0e978625f42b7b6d8af\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\9ace5799a4ef4e27facc2b6f9cbf8f57\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\9ace5799a4ef4e27facc2b6f9cbf8f57\AndroidManifest.xml:20:5-44
-MERGED from [:mdslib:1.28.1(1)-release] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\mdslib-1.28.1(1)-release.aar\4adea33ffff03812fc7f1332dd3057af\AndroidManifest.xml:8:5-10:41
-MERGED from [:mdslib:1.28.1(1)-release] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\mdslib-1.28.1(1)-release.aar\4adea33ffff03812fc7f1332dd3057af\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\95894cb194b26639575574a8bc9dd418\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\95894cb194b26639575574a8bc9dd418\AndroidManifest.xml:5:5-7:41
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.2.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\proguard-rules-1.3.2.0.aar\6aad9ad3971fb8c1246bef46ee041aa2\AndroidManifest.xml:8:5-43
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.2.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\proguard-rules-1.3.2.0.aar\6aad9ad3971fb8c1246bef46ee041aa2\AndroidManifest.xml:8:5-43
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\ddaa6f70c1f5f052d43fbe82a85ffa84\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\ddaa6f70c1f5f052d43fbe82a85ffa84\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d4782e4dd27301d3f37278ff0641ac7\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\7d4782e4dd27301d3f37278ff0641ac7\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\373470c58aca143e9b99474c2f54b4c1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\373470c58aca143e9b99474c2f54b4c1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\60f0cbc5ac3037b6885dc6fde7e5b195\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\60f0cbc5ac3037b6885dc6fde7e5b195\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\d416e60dc62a7210a2a079b83354c953\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\d416e60dc62a7210a2a079b83354c953\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\031fff1c2ef8a9880ce681fb6e85f921\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\031fff1c2ef8a9880ce681fb6e85f921\AndroidManifest.xml:4:5-43
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\076176df8d030ba7274ab962ef9df90e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\076176df8d030ba7274ab962ef9df90e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\73230e5c4ccb23ef1da5705b14495305\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\73230e5c4ccb23ef1da5705b14495305\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2377845ca2a590526a689cd986d76869\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2377845ca2a590526a689cd986d76869\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2111df70e64f11b62631e198c647c34b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2111df70e64f11b62631e198c647c34b\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\e5a21c89cc6b12f764aa3a27e201d874\AndroidManifest.xml:8:5-10:41
+MERGED from [pub.devrel:easypermissions:0.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\easypermissions-0.2.1.aar\e5a21c89cc6b12f764aa3a27e201d874\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\e5aae037294240a38a90c9edfb553a17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\e5aae037294240a38a90c9edfb553a17\AndroidManifest.xml:20:5-44
+MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\90f199a04ad6c2b2c005519d0d382d44\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\graphview-4.2.1.aar\90f199a04ad6c2b2c005519d0d382d44\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\11c3ff506c6609385b050b860aaf13f0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\11c3ff506c6609385b050b860aaf13f0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\bebc23204f28a521c044acac5b8db327\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\bebc23204f28a521c044acac5b8db327\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\f82f6b160ea88188c54ca6817e5c3703\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\f82f6b160ea88188c54ca6817e5c3703\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\7e209915b88af3f4460c400b87a16008\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\7e209915b88af3f4460c400b87a16008\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\4c1ee218b22e28508cc0dbfc3c1be163\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\4c1ee218b22e28508cc0dbfc3c1be163\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\897db8af18b89f74ed10da3ea557b249\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\897db8af18b89f74ed10da3ea557b249\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\df0a0cc344b331953844205d8f603220\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\df0a0cc344b331953844205d8f603220\AndroidManifest.xml:20:5-44
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:7:5-9:41
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\5c8d18c8dc858d29f8bdb31aa6e52996\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\5c8d18c8dc858d29f8bdb31aa6e52996\AndroidManifest.xml:19:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\18ea07890c2052a3a13e242015a59538\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\18ea07890c2052a3a13e242015a59538\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\fc0efefb4e0ddf084f654620a81e0037\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\fc0efefb4e0ddf084f654620a81e0037\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\d0e457c8d5faa9d911c78f3b09b2628b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\d0e457c8d5faa9d911c78f3b09b2628b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\face66c7e9d77f4776d21f6823ea9cbf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\face66c7e9d77f4776d21f6823ea9cbf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\47709de115f98995f54c7ee1af42594d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\47709de115f98995f54c7ee1af42594d\AndroidManifest.xml:20:5-44
+MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\ee484162ab7ad2936fb6484cd6b97826\AndroidManifest.xml:7:5-9:41
+MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\ee484162ab7ad2936fb6484cd6b97826\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\3aaf737b79674d8b1a8e625a3c74bcfb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\3aaf737b79674d8b1a8e625a3c74bcfb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\2d2687191e8f4bd98a0da0fbbdbb1c18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\2d2687191e8f4bd98a0da0fbbdbb1c18\AndroidManifest.xml:20:5-44
+MERGED from [:mdslib:1.28.1(1)-release] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\mdslib-1.28.1(1)-release.aar\c16755cd2db33ef7b2a09e3e85859e94\AndroidManifest.xml:8:5-10:41
+MERGED from [:mdslib:1.28.1(1)-release] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\mdslib-1.28.1(1)-release.aar\c16755cd2db33ef7b2a09e3e85859e94\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\447adf74b84f9746f2ac680a44f93063\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\447adf74b84f9746f2ac680a44f93063\AndroidManifest.xml:5:5-7:41
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.2.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\proguard-rules-1.3.2.0.aar\44d712b6f289feb52e477f17584f7a84\AndroidManifest.xml:8:5-43
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.2.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\proguard-rules-1.3.2.0.aar\44d712b6f289feb52e477f17584f7a84\AndroidManifest.xml:8:5-43
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\cde40e80c36fed88d0f855a80f1c0dc8\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-drive-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\cde40e80c36fed88d0f855a80f1c0dc8\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\8251aa581b0a7183ab0cbba3dda9932e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\8251aa581b0a7183ab0cbba3dda9932e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\399c6ae826d1068a64157cf3d3109f4d\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\399c6ae826d1068a64157cf3d3109f4d\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\967cdaa8fcd5a70eab7e7b517922a1c4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\967cdaa8fcd5a70eab7e7b517922a1c4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\aa553c1531d447e1b01c17edd042e5e7\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\aa553c1531d447e1b01c17edd042e5e7\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\7c86b4436e64c8acd40e8192385e97ec\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\7c86b4436e64c8acd40e8192385e97ec\AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\42dc795960d98927d1908a9fb8a5740d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\42dc795960d98927d1908a9fb8a5740d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92fb520de362e9e4690a8b8319afff3f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92fb520de362e9e4690a8b8319afff3f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d74f91def1610d8c4fea4554170c8fc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d74f91def1610d8c4fea4554170c8fc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6a101ac207480d5b172d633aad956efb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6a101ac207480d5b172d633aad956efb\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:55:13-57:62
+ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:55:13-57:62
 	android:resource
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:57:17-60
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:57:17-60
 	android:name
-		ADDED from C:\Users\Tomi\Documents\Programming\AirBeat\src\main\AndroidManifest.xml:56:17-67
+		ADDED from C:\Users\elisa\Junction\AirBeat\src\main\AndroidManifest.xml:56:17-67
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:23:9-27:75
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:25:13-46
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:27:13-72
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:24:13-93
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:24:13-93
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:33:9-36:110
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:33:9-36:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:35:13-36
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:35:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:36:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\fefd522e10653910fcb290a6e4ea4a43\AndroidManifest.xml:34:13-89
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\564be2556e27ba6b3e760560e31a821d\AndroidManifest.xml:34:13-89
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\52d6a8ead29a861729468e21fa652917\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\4b6ec9a71946f76171f68697dfddcd0b\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\63ce0956dc374f4f0c1a863486ee8b48\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\3f01cd667172ef5dadbba2fe39142003\AndroidManifest.xml:24:13-58
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:12:5-74
-MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\d96acc7e49b7a3bcf10057c6393ae072\AndroidManifest.xml:12:5-74
-MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\d96acc7e49b7a3bcf10057c6393ae072\AndroidManifest.xml:12:5-74
+ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:12:5-74
+MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\ee484162ab7ad2936fb6484cd6b97826\AndroidManifest.xml:12:5-74
+MERGED from [no.nordicsemi.android:dfu:1.6.0] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\dfu-1.6.0.aar\ee484162ab7ad2936fb6484cd6b97826\AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:12:22-71
+		ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:12:22-71
 uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:14:5-88
+ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:14:5-88
 	android:name
-		ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\Tomi\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\3d34a96d99c6f92eb1ef758c83cc5332\AndroidManifest.xml:14:29-85
+		ADDED from [com.polidea.rxandroidble:rxandroidble:1.4.3] C:\Users\elisa\.gradle\caches\transforms-1\files-1.1\rxandroidble-1.4.3.aar\4dbefbd93449254b3d2ecc4dd7cb3fce\AndroidManifest.xml:14:29-85

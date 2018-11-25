@@ -70,30 +70,6 @@ public class MultiSensorUsageActivity extends BaseActivity implements MultiSenso
     @BindView(R.id.multiSensorUsage_linearAcc_device2_y_tv) TextView mMultiSensorUsageLinearAccDevice2YTv;
     @BindView(R.id.multiSensorUsage_linearAcc_device2_z_tv) TextView mMultiSensorUsageLinearAccDevice2ZTv;
     @BindView(R.id.multiSensorUsage_linearAcc_containerLl) LinearLayout mMultiSensorUsageLinearAccContainerLl;
-    @BindView(R.id.multiSensorUsage_angularVelocity_textView) TextView mMultiSensorUsageAngularVelocityTextView;
-    @BindView(R.id.multiSensorUsage_angularVelocity_switch) SwitchCompat mMultiSensorUsageAngularVelocitySwitch;
-    @BindView(R.id.multiSensorUsage_angularVelocity_device1_x_tv) TextView mMultiSensorUsageAngularVelocityDevice1XTv;
-    @BindView(R.id.multiSensorUsage_angularVelocity_device1_y_tv) TextView mMultiSensorUsageAngularVelocityDevice1YTv;
-    @BindView(R.id.multiSensorUsage_angularVelocity_device1_z_tv) TextView mMultiSensorUsageAngularVelocityDevice1ZTv;
-    @BindView(R.id.multiSensorUsage_angularVelocity_device2_x_tv) TextView mMultiSensorUsageAngularVelocityDevice2XTv;
-    @BindView(R.id.multiSensorUsage_angularVelocity_device2_y_tv) TextView mMultiSensorUsageAngularVelocityDevice2YTv;
-    @BindView(R.id.multiSensorUsage_angularVelocity_device2_z_tv) TextView mMultiSensorUsageAngularVelocityDevice2ZTv;
-    @BindView(R.id.multiSensorUsage_angularVelocity_containerLl) LinearLayout mMultiSensorUsageAngularVelocityContainerLl;
-    @BindView(R.id.multiSensorUsage_magneticField_textView) TextView mMultiSensorUsageMagneticFieldTextView;
-    @BindView(R.id.multiSensorUsage_magneticField_switch) SwitchCompat mMultiSensorUsageMagneticFieldSwitch;
-    @BindView(R.id.multiSensorUsage_magneticField_device1_x_tv) TextView mMultiSensorUsageMagneticFieldDevice1XTv;
-    @BindView(R.id.multiSensorUsage_magneticField_device1_y_tv) TextView mMultiSensorUsageMagneticFieldDevice1YTv;
-    @BindView(R.id.multiSensorUsage_magneticField_device1_z_tv) TextView mMultiSensorUsageMagneticFieldDevice1ZTv;
-    @BindView(R.id.multiSensorUsage_magneticField_device2_x_tv) TextView mMultiSensorUsageMagneticFieldDevice2XTv;
-    @BindView(R.id.multiSensorUsage_magneticField_device2_y_tv) TextView mMultiSensorUsageMagneticFieldDevice2YTv;
-    @BindView(R.id.multiSensorUsage_magneticField_device2_z_tv) TextView mMultiSensorUsageMagneticFieldDevice2ZTv;
-    @BindView(R.id.multiSensorUsage_magneticField_containerLl) LinearLayout mMultiSensorUsageMagneticFieldContainerLl;
-    @BindView(R.id.multiSensorUsage_temperature_textView) TextView mMultiSensorUsageTemperatureTextView;
-    @BindView(R.id.multiSensorUsage_temperature_device1_value_tv) TextView mMultiSensorUsageTemperatureDevice1ValueTv;
-    @BindView(R.id.multiSensorUsage_temperature_containerLl) LinearLayout mMultiSensorUsageTemperatureContainerLl;
-    @BindView(R.id.multiSensorUsage_temperature_device2_value_tv) TextView mMultiSensorUsageTemperatureDevice2ValueTv;
-    @BindView(R.id.multiSensorUsage_temperature_switch) SwitchCompat mMultiSensorUsageTemperatureSwitch;
-
 
     private MultiSensorUsagePresenter mPresenter;
     private CompositeSubscription mCompositeSubscription;

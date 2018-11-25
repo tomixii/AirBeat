@@ -19,9 +19,9 @@ import java.lang.Override;
 public class LinearAccelerationTestActivity_ViewBinding implements Unbinder {
   private LinearAccelerationTestActivity target;
 
-  private View view2131165453;
+  private View view2131165450;
 
-  private View view2131165441;
+  private View view2131165438;
 
   @UiThread
   public LinearAccelerationTestActivity_ViewBinding(LinearAccelerationTestActivity target) {
@@ -36,7 +36,7 @@ public class LinearAccelerationTestActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.switchSubscription, "field 'switchSubscription' and method 'onCheckedChanged'");
     target.switchSubscription = Utils.castView(view, R.id.switchSubscription, "field 'switchSubscription'", SwitchCompat.class);
-    view2131165453 = view;
+    view2131165450 = view;
     ((CompoundButton) view).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
       @Override
       public void onCheckedChanged(CompoundButton p0, boolean p1) {
@@ -45,7 +45,7 @@ public class LinearAccelerationTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.spinner, "field 'spinner' and method 'onItemSelected'");
     target.spinner = Utils.castView(view, R.id.spinner, "field 'spinner'", Spinner.class);
-    view2131165441 = view;
+    view2131165438 = view;
     ((AdapterView<?>) view).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -80,9 +80,9 @@ public class LinearAccelerationTestActivity_ViewBinding implements Unbinder {
     target.mConnectedDeviceSwVersionTextView = null;
     target.mChart = null;
 
-    ((CompoundButton) view2131165453).setOnCheckedChangeListener(null);
-    view2131165453 = null;
-    ((AdapterView<?>) view2131165441).setOnItemSelectedListener(null);
-    view2131165441 = null;
+    ((CompoundButton) view2131165450).setOnCheckedChangeListener(null);
+    view2131165450 = null;
+    ((AdapterView<?>) view2131165438).setOnItemSelectedListener(null);
+    view2131165438 = null;
   }
 }

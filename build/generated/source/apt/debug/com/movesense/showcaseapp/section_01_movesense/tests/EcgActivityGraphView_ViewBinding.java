@@ -21,9 +21,9 @@ import java.lang.Override;
 public class EcgActivityGraphView_ViewBinding implements Unbinder {
   private EcgActivityGraphView target;
 
-  private View view2131165453;
+  private View view2131165450;
 
-  private View view2131165441;
+  private View view2131165438;
 
   private View view2131165273;
 
@@ -39,7 +39,7 @@ public class EcgActivityGraphView_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.switchSubscription, "field 'mSwitchSubscription' and method 'onCheckedChanged'");
     target.mSwitchSubscription = Utils.castView(view, R.id.switchSubscription, "field 'mSwitchSubscription'", SwitchCompat.class);
-    view2131165453 = view;
+    view2131165450 = view;
     ((CompoundButton) view).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
       @Override
       public void onCheckedChanged(CompoundButton p0, boolean p1) {
@@ -51,7 +51,7 @@ public class EcgActivityGraphView_ViewBinding implements Unbinder {
     target.mConnectedDeviceSwVersionTextView = Utils.findRequiredViewAsType(source, R.id.connected_device_swVersion_textView, "field 'mConnectedDeviceSwVersionTextView'", TextView.class);
     view = Utils.findRequiredView(source, R.id.spinner, "field 'mSpinner' and method 'onItemSelected'");
     target.mSpinner = Utils.castView(view, R.id.spinner, "field 'mSpinner'", Spinner.class);
-    view2131165441 = view;
+    view2131165438 = view;
     ((AdapterView<?>) view).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -95,10 +95,10 @@ public class EcgActivityGraphView_ViewBinding implements Unbinder {
     target.mHeartRateTextView = null;
     target.mRrTextView = null;
 
-    ((CompoundButton) view2131165453).setOnCheckedChangeListener(null);
-    view2131165453 = null;
-    ((AdapterView<?>) view2131165441).setOnItemSelectedListener(null);
-    view2131165441 = null;
+    ((CompoundButton) view2131165450).setOnCheckedChangeListener(null);
+    view2131165450 = null;
+    ((AdapterView<?>) view2131165438).setOnItemSelectedListener(null);
+    view2131165438 = null;
     view2131165273.setOnClickListener(null);
     view2131165273 = null;
   }

@@ -20,7 +20,9 @@ public class MultiConnectionActivity_ViewBinding implements Unbinder {
 
   private View view2131165212;
 
-  private View view2131165348;
+  private View view2131165344;
+
+  private View view2131165345;
 
   @UiThread
   public MultiConnectionActivity_ViewBinding(MultiConnectionActivity target) {
@@ -60,7 +62,16 @@ public class MultiConnectionActivity_ViewBinding implements Unbinder {
     target.mMultiConnectionSelectedDeviceInfoLl2 = Utils.findRequiredViewAsType(source, R.id.multiConnection_selectedDeviceInfo_Ll_2, "field 'mMultiConnectionSelectedDeviceInfoLl2'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.multiConnection_connect_Tv, "field 'mMultiConnectionConnectTv' and method 'onViewClicked'");
     target.mMultiConnectionConnectTv = Utils.castView(view, R.id.multiConnection_connect_Tv, "field 'mMultiConnectionConnectTv'", TextView.class);
-    view2131165348 = view;
+    view2131165344 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.multiConnection_save_Tv, "field 'mMultiConnectionSaveTv' and method 'onViewClicked'");
+    target.mMultiConnectionSaveTv = Utils.castView(view, R.id.multiConnection_save_Tv, "field 'mMultiConnectionSaveTv'", TextView.class);
+    view2131165345 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,13 +99,16 @@ public class MultiConnectionActivity_ViewBinding implements Unbinder {
     target.mMultiConnectionSelectedDeviceSerialTv2 = null;
     target.mMultiConnectionSelectedDeviceInfoLl2 = null;
     target.mMultiConnectionConnectTv = null;
+    target.mMultiConnectionSaveTv = null;
     target.mMultiConnectionStatusTv = null;
 
     view2131165211.setOnClickListener(null);
     view2131165211 = null;
     view2131165212.setOnClickListener(null);
     view2131165212 = null;
-    view2131165348.setOnClickListener(null);
-    view2131165348 = null;
+    view2131165344.setOnClickListener(null);
+    view2131165344 = null;
+    view2131165345.setOnClickListener(null);
+    view2131165345 = null;
   }
 }
