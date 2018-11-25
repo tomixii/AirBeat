@@ -21,13 +21,10 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/mainView_card_height"
             android:orientation="horizontal"
-            android:weightSum="1">
-
-
+            android:weightSum="2">
             <RelativeLayout
-                android:id="@+id/mainView_multiConnection_Ll"
+                android:id="@+id/mainView_movesense_Ll"
                 android:layout_width="0dp"
-                android:shape="oval"
                 android:layout_height="match_parent"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
@@ -36,11 +33,42 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:shape="oval"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/mainView_movesense_text"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/flash_circle"/>
+
+                <TextView
+                    android:id="@+id/mainView_movesense_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#3d545252"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Movesense"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainView_multiConnection_Ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@color/colorMainViewCardBackground"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_above="@id/mainView_multiConnection_text"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/flash_circle"/>
+                    android:src="@drawable/google_circles"/>
 
 
                 <TextView
@@ -60,8 +88,24 @@
             </RelativeLayout>
         </LinearLayout>
 
-
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/mainView_libraryVersion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/library_version"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/mainView_appVersion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/application_version"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/mainView_libraryVersion_tv"/>
 
 </android.support.constraint.ConstraintLayout>
